@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .langues {
+        position: absolute;
+        left: 40%;
+        padding-top: 5px;
+    }
+    
+    .navbar-collapse {
+        float: none;
+    }
+    .navbar-nav > li:after {
+        display: none;
+    }
+    
+    .aboutus .one,
+    .aboutus .two {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+
+
+/******** contact us*******************/
