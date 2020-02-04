@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -83,8 +81,10 @@ button {
     align-items: flex-start;
 }
 
-.logo {
+.navbar .logo {
     float: left;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 
@@ -94,7 +94,8 @@ button {
     padding: 15px 20px;
 }
 
-.navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-nav > li > a:focus {
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus {
     color: #00c7b1;
     text-decoration: none;
     font-size: 20px;
@@ -220,6 +221,43 @@ button {
 }
 
 
+.test-section{
+    background: url(../image/quotation.png) no-repeat left top;
+    box-shadow: 15px indigo;
+}
+.test-section h4{
+    padding: 50px;
+    text-align: justify;
+}
+.test-section .test-author{
+    display: block;
+    font-weight: 700;
+}
+.test-section .test-portrait{
+    display: block;
+    position: relative;
+    box-sizing: content-box;
+    width: 90px;
+    height: 90px;
+    align-content: center;
+    background-blend-mode: screen;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 90px;
+    background-size: cover;
+    margin: 0 auto;
+    transition: all 0.7s ease;
+}
+.test-section .test-portrait:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: indigo;
+}
+
+.test-section .test-author span{
+    
+    font-size: 15px;
+}
 .aboutus .four .pic {
     height: 250px;
     width: 100%;
@@ -228,52 +266,54 @@ button {
 
 
 /********************** Product Page ********************/
-.product_banner{
+.product_banner {
     background-image: url(../image/product_banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height:347px;
-	color:#fff;
-	text-align:center;
-	font-size:18px;
+    height: 347px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
 }
 
 .product_banner h4 {
-	font-size:30px;
-	line-height:48px;
+    font-size: 30px;
+    line-height: 48px;
 }
 
 .product_banner i {
-	display:block;
-	margin:0 auto;
-	width:53px;
-	height:5px;
-	background:#00c7b1;
+    display: block;
+    margin: 0 auto;
+    width: 53px;
+    height: 5px;
+    background: #00c7b1;
 }
 
 .product_banner .line {
-	padding:110px 0 20px;
+    padding: 110px 0 20px;
 }
 
 /********************** Products ********************/
 
-.products .p1{
+.products .p1 {
     text-align: center;
     padding: 50px 0;
 }
-.products .p1 h2{
+
+.products .p1 h2 {
     font-size: 30px;
     padding-top: 15px;
 }
+
 .products h4 {
     font-size: 18px;
     margin: 30px 0 60px;
     line-height: 24px;
 }
 
-.products .p1 a{
+.products .p1 a {
     display: block;
     border-radius: 10px;
     box-shadow: 0 0 20px #ddd;
@@ -283,69 +323,75 @@ button {
     color: #000;
 }
 
-.products .p1 a .pic{
+.products .p1 a .pic {
     height: 240px;
     border-bottom: 2px solid #ddd;
 }
-.products .p1 a .pic img{
+
+.products .p1 a .pic img {
     width: 100%;
 }
-.products .p1 a h3{
+
+.products .p1 a h3 {
     text-transform: uppercase;
     padding: 20px 0;
 }
 
-.products .p1 a:hover{
+.products .p1 a:hover {
     color: #00c7b1;
     text-decoration: none;
 }
 
 
 /*********product gallary ****************/
-.products .p2{
+.products .p2 {
     text-align: center;
     padding: 50px 0;
     background: #00c7b1;
 }
-.products .p2 i{
+
+.products .p2 i {
     background: #000;
 }
 
-.products .p2 h2{
+.products .p2 h2 {
     padding: 20px 0;
 }
 
-.products .t-menu{
+.products .t-menu {
     color: #000;
     font-size: 20px;
     padding: 15px 10px;
     text-transform: uppercase;
 }
-.products .card{
+
+.products .card {
     position: relative;
     overflow: hidden;
     cursor: pointer;
     margin: 10px 0;
 }
-.products .card img{
+
+.products .card img {
     width: 100%;
     height: 200%;
 }
 
-.products .p2 .p_name h2{
+.products .p2 .p_name h2 {
     padding: 20px 0;
     font-size: 20px;
 }
-.products .card img:hover{
+
+.products .card img:hover {
     transform: scale(1.1);
     transition: all 0.7s ease-in-out;
 }
 
-.products .card:before{
+.products .card:before {
     position: absolute;
     content: '';
     width: 100%;
-    height: 50px;
+    height: 80px;
     background: #00c7b1;
     opacity: 0.7;
     top: -100%;
@@ -354,11 +400,12 @@ button {
     transition: 0.5s;
     z-index: 1;
 }
-.products .card:hover:before{
+
+.products .card:hover:before {
     top: 0%;
 }
 
-.products .card .p_name{
+.products .card .p_name {
     width: 100%;
     position: absolute;
     color: #fff;
@@ -369,31 +416,36 @@ button {
     z-index: 2;
 }
 
-.tab-content .card:hover .p_name{
+.tab-content .card:hover .p_name {
     width: 100%;
     top: -5%;
 }
 
 /*************  Download Catelogue Section**********************/
 
-.products .p3{
+.products .p3 {
     text-align: center;
     padding: 50px 0;
 }
 
-.products .p3 h2{
+.products .p3 h2 {
     padding: 20px 0;
 }
-.products .p3 .pic{
+
+.products .p3 .pic {
     box-shadow: 0 0 30px #00c7b1;
+    width: 248px;
+    height: 344px;
 }
-.products .p3 .pic:hover{
+
+.products .p3 .pic:hover {
     cursor: pointer;
     transform: scale(1.03);
     transition: all 1s ease;
-    
+
 }
-.products .p3 li a{
+
+.products .p3 li a {
     display: block;
     width: 60%;
     border: 2px solid #ddd;
@@ -406,14 +458,13 @@ button {
     text-decoration: none;
 }
 
-.products .p3 li a:hover{
+.products .p3 li a:hover {
     color: #00c7b1;
     border: 2px solid #00c7b1;
 }
-
 /*********************** About us page ****************/
 /******** vido banner ********/
-.vid_banner{
+.vid_banner {
     width: 100%;
     height: 450px;
     overflow: hidden;
@@ -424,7 +475,8 @@ button {
     color: #00c7b1;
     font-weight: 700;
 }
-.vid_banner video{
+
+.vid_banner video {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -433,7 +485,8 @@ button {
     object-fit: cover;
     pointer-events: none;
 }
-.vid_banner .company_details{
+
+.vid_banner .company_details {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -443,45 +496,49 @@ button {
 }
 
 /******* service banner *****/
-.aboutus_banner .about_heading{
+.aboutus_banner .about_heading {
     position: relative;
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.aboutus_banner .about_heading> ul> li{
+
+.aboutus_banner .about_heading > ul > li {
     font-size: 20px;
     line-height: 1.5em;
     font-weight: 700;
 }
+
 /**************************/
-.about_company{
+.about_company {
     background: url(../image/goal_banner.jpg) no-repeat center #00c7b1;
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: screen;
-    
+
     text-align: center;
     padding: 50px 0;
 }
-.about_company i{
+
+.about_company i {
     background: #000;
 }
-.about_company p{
+
+.about_company p {
     padding: 20px 0;
     text-align: justify;
     font-weight: 500;
 }
 
-.about_company .intro_video{
+.about_company .intro_video {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.team_member{
+.team_member {
     text-align: center;
     background: url(../image/our-team.jpg) no-repeat center;
     background-size: cover;
@@ -494,60 +551,60 @@ button {
 /***********************Conatct page ********************/
 
 .contact {
-            background: #00c7b1;
-            text-align: center;
-            padding: 60px 0;
-        }
+    background: #00c7b1;
+    text-align: center;
+    padding: 60px 0;
+}
 
-        .contact .c-image {
-            position: relative;
-            height: 450px;
-            width: 450px;
-        }
+.contact .c-image {
+    position: relative;
+    height: 450px;
+    width: 450px;
+}
 
 
 
-        .contact .c-middle {
-            position: relative;
-            top: 30%;
-            align-content: center;
-            color: #fff;
-        }
+.contact .c-middle {
+    position: relative;
+    top: 30%;
+    align-content: center;
+    color: #fff;
+}
 
-        .c-hero__buttons {
-            margin-top: 35px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.c-hero__buttons {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .contact .c-button {
-            background-color: #FF3465;
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 100px;
-            font-family: "Graphik-Medium";
-            font-size: 18px;
-            color: #FFF;
-            text-align: center;
-            padding: 0 30px;
-            display: inline-flex;
-            border: 1px solid #FF3465;
-            padding: 12px 30px;
-            line-height: 14px;
-            text-decoration: none;
-            transition: all ease-in-out 0.2s;
-            margin-right: 18px;
-            margin-bottom: 8px;
-            margin-left: 0;
-            cursor: pointer;
-        }
+.contact .c-button {
+    background-color: #FF3465;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    font-family: "Graphik-Medium";
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    padding: 0 30px;
+    display: inline-flex;
+    border: 1px solid #FF3465;
+    padding: 12px 30px;
+    line-height: 14px;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+    margin-right: 18px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    cursor: pointer;
+}
 
-        .contact .c-button:hover {
-            background: #FFF;
-            border-color: #FFF;
-            color: #00c7b1;
-            text-decoration: none;
-        }
+.contact .c-button:hover {
+    background: #FFF;
+    border-color: #FFF;
+    color: #00c7b1;
+    text-decoration: none;
+}
 
 /************** contact modal **************/
 .contact .contact-modal {
@@ -560,87 +617,179 @@ button {
     justify-content: center;
     align-items: center;
 }
-.contact .form-content{
+
+.contact .form-content {
     height: 400px;
-	width: 450px;
+    width: 450px;
     margin: 0 auto;
-	background-color: #00c7b1;
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 10px;
+    background-color: #00c7b1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
 }
-.contact .form-content img{
+
+.contact .form-content img {
     height: 70px;
     width: 70px;
 }
+
 .contact .form-content input {
-	margin: 15px auto;
-	display: block;
-	width: 70%;
-	padding: 8px;
+    margin: 15px auto;
+    display: block;
+    width: 70%;
+    padding: 8px;
     font-size: 15px;
     font-weight: 500;
     background-color: transparent;
-	border: 2px solid #fff;
+    border: 2px solid #fff;
     border-radius: 20px;
 }
 
 .contact .form-content textarea {
     background-color: transparent;
-	margin: 15px auto;
-	display: block;
-	width: 70%;
-	padding: 8px;
+    margin: 15px auto;
+    display: block;
+    width: 70%;
+    padding: 8px;
     font-size: 15px;
     font-weight: 500;
-	border: 2px solid #fff;
+    border: 2px solid #fff;
     border-radius: 20px;
 }
 
 .contact .form-content .button {
-	background-color: #00c7b1;
-	border: 2px solid white;
+    background-color: #00c7b1;
+    border: 2px solid white;
     font-size: 20px;
     font-weight: 500;
-	border-radius: 30px;
-	text-decoration: none;
-	padding: 10px 28px;
-	color: white;
-	margin-top: 10px;
-	display: inline-block;
-	
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+
 }
-.contact .form-content .button:hover{
+
+.contact .form-content .button:hover {
     background-color: #fff;
-		color: #00c7b1;
-		border: 2px solid #000;
+    color: #00c7b1;
+    border: 2px solid #000;
 }
+
 .contact .form-content .close {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 50px;
-	color: #333;
-	transform: rotate(45deg);
-	cursor: pointer;
-	&:hover {
-		color: #666;
-	}
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 50px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    &:hover {
+        color: #666;
+    }
 }
 
 /***************************** Page Footer ***********/
 
 .footer {
-	background:#353535;
-	color:#fff;
-	line-height:26px;
-	padding:25px 0;
+    background: #353535;
+    color: #fff;
+    line-height: 26px;
+    padding: 25px 0;
 }
-.footer img{
+
+.footer img {
     display: block;
     margin: 0px auto;
 }
 
+
+/********************* Responsive Media Query *******************/
+
+@media (max-width: 574px) {
+    .aboutus .one {
+        padding-top: 0;
+        margin-top: 0;
+        height: 510px;
+    }
+
+    .aboutus .one h2 {
+        display: block;
+        font-size: 1em;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .three .left {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .langues {
+        position: relative;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .navbar .navbar-toggler {
+        right: 0;
+        position: absolute;
+    }
+
+
+    .navbar-collapse {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+
+    }
+
+    .navbar-nav > li:after {
+        display: none;
+    }
+
+    .aboutus .one,
+    .aboutus .two {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    
+
+}
+@media (max-width: 900px){
+    .contact .c-image {
+        position: relative;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 495px) {
+
+    .contact .c-middle{
+        padding-bottom: 30px;
+    }
+    .contact .c-image {
+        position: relative;
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .navbar-collapse li a {
+        color: #333;
+        font-size: 15px !important;
+        padding: 15px 10px;
+    }
+
+}
 
 
